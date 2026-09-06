@@ -3,18 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KANASHIMI | 3D Assets</title>
+
+    <title>KANASHIMI GAME | Unity 3D Assets</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, "Noto Sans JP", sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            padding: 24px 8%;
+            border-bottom: 1px solid #333;
+            background: #151515;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 6px 0 0;
+            color: #aaa;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            text-align: center;
+            background: linear-gradient(180deg, #222, #111);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 30px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .product h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .product p {
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 3px;
+            border-radius: 20px;
+            background: #333;
+            color: #ddd;
+            font-size: 13px;
+        }
+
+        .about {
+            line-height: 1.9;
+            color: #ccc;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>KANASHIMI</h1>
+<header>
+    <h1>KANASHIMI GAME</h1>
+    <p>Unity 3D Asset Creator</p>
+</header>
 
-    <h2>Unity向け3Dアセット</h2>
-
+<div class="hero">
+    <h2>3D Assets for Unity</h2>
     <p>
         Unity向けの3Dモデル・ゲームアセットを制作しています。
     </p>
+</div>
+
+<section>
+    <h2>Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Low Poly Park</h3>
+
+            <p>
+                ゲーム制作に使用できるローポリスタイルの
+                公園3Dアセットです。
+            </p>
+
+            <span class="tag">Low Poly</span>
+            <span class="tag">Unity</span>
+            <span class="tag">3D Environment</span>
+        </div>
+
+        <div class="product">
+            <h3>Coming Soon</h3>
+
+            <p>
+                新しい3Dアセットを制作中です。
+            </p>
+
+            <span class="tag">3D Model</span>
+            <span class="tag">Unity</span>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>About</h2>
+
+    <div class="about">
+        <p>
+            KANASHIMI GAMEでは、Unityを使用したゲーム制作に
+            利用できる3Dアセットを制作しています。
+        </p>
+
+        <p>
+            ゲーム制作で扱いやすいモデルや、
+            ローポリスタイルの環境アセットを中心に制作しています。
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Unity Asset Store</h2>
+
+    <p class="about">
+        Unity Asset Store向けのアセットを制作しています。
+        商品ページは準備ができ次第公開します。
+    </p>
+</section>
+
+<footer>
+    © 2026 KANASHIMI GAME
+</footer>
 
 </body>
 </html>
