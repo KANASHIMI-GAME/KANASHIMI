@@ -7,13 +7,6 @@
     <title>KANASHIMI GAME | Unity 3D Assets</title>
 
     <style>
-        .product img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        display: block;
-        margin-bottom: 20px;
-        }
         * {
             box-sizing: border-box;
         }
@@ -72,6 +65,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
+            align-items: start;
         }
 
         .product {
@@ -79,6 +73,20 @@
             border: 1px solid #333;
             border-radius: 12px;
             padding: 25px;
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
         }
 
         .product h3 {
@@ -134,11 +142,16 @@
 
     <div class="products">
 
+        <!-- 公園 -->
         <div class="product">
-            <img src="画像フォルダ/全体.png" alt="公園モデル">
-            <img src="画像フォルダ/ブランコ.png" alt="ブランコ">
-            <img src="画像フォルダ/滑り台.png" alt="滑り台">
-            
+
+            <div class="product-images">
+                <img src="画像フォルダ/全体.png" alt="公園モデル">
+                <img src="画像フォルダ/ブランコ.png" alt="ブランコ">
+                <img src="画像フォルダ/滑り台.png" alt="滑り台">
+                <img src="画像フォルダ/ベンチ.png" alt="ベンチ">
+            </div>
+
             <h3>Low Poly Park</h3>
 
             <p>
@@ -149,9 +162,12 @@
             <span class="tag">Low Poly</span>
             <span class="tag">Unity</span>
             <span class="tag">3D Environment</span>
+
         </div>
 
+        <!-- 次のアセット -->
         <div class="product">
+
             <h3>Coming Soon</h3>
 
             <p>
@@ -160,6 +176,7 @@
 
             <span class="tag">3D Model</span>
             <span class="tag">Unity</span>
+
         </div>
 
     </div>
